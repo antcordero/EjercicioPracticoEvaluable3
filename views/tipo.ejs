@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PokéDex - <%= tipoSeleccionado %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/tipo.css">
+</head>
+
+<body>
+    <%- include("partials/header") %>
+
+    <main class="contenedor">
+        <h2>Pokémon de tipo <%= tipoSeleccionado %>
+        </h2>
+
+        <section class="grid-pokemon">
+            <% pokemons.forEach(p=> { %>
+                <article class="card-pokemon">
+                    <a href="/pokemon/<%= p.id %>">
+                        <img src="<%= p.imagen %>" alt="<%= p.nombre %>">
+                        <div class="card-info">
+                            <span class="numero"><%= p.numero %></span>
+                            <h3><%= p.nombre %></h3>
+                        </div>
+                    </a>
+                </article>
+            <% }) %>
+        </section>
+    </main>
+
+    <%- include("partials/footer") %>
+</body>
+</html>

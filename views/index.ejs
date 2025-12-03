@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Prueba</p>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>PokéDex</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <%- include("partials/header") %>
+
+  <main class="contenedor">
+    <h2>Pokémon Registrados</h2>
+
+    <section class="grid-pokemon">
+      <% pokemons.forEach(p => { %>
+        <article class="card-pokemon">
+          <a href="/pokemon/<%= p.id %>">
+            <img src="<%= p.imagen %>" alt="<%= p.nombre %>">
+            <div class="card-info">
+              <span class="numero"><%= p.numero %></span>
+              <h3><%= p.nombre %></h3>
+            </div>
+          </a>
+        </article>
+      <% }) %>
+    </section>
+  </main>
+
+  <%- include("partials/footer") %>
+
+</body>
 </html>

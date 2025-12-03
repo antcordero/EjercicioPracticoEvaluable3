@@ -1,0 +1,22 @@
+<header class="header">
+  <div class="header-image"></div>
+
+  <div class="header-texto">
+    <h1>PokéDex</h1>
+    <p>Enciclopedia Pokémon Completa</p>
+  </div>
+
+  <nav class="tipos-bar">
+    <ul>
+      <li>
+        <a href="/" class="<% if (!tipoSeleccionado || tipoSeleccionado === 'Todos') { %>active<% } %>">Todos</a>
+      </li>
+
+      <% tipos.forEach(t => { %>
+        <li>
+          <a href="/tipo/<%= t %>" class="<% if (tipoSeleccionado === t) { %>active<% } %>"><%= t %></a>
+        </li>
+      <% }) %>
+    </ul>
+  </nav>
+</header>

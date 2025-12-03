@@ -1,0 +1,50 @@
+@import "normalize.css";
+@import "style.css";
+
+/*********** VISTA DETALLE POKÉMON *************/
+
+.detalle-pokemon {
+  max-width: 960px;
+  text-align: center;
+}
+
+.detalle-pokemon h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.detalle-pokemon p {
+  margin: 0.2rem 0;
+}
+
+.detalle-imagen img {
+  width: 800px;
+  height: 600px;
+  object-fit: contain;
+  margin: 2rem auto;
+  display: block;
+}
+
+.detalle-descripcion {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.detalle-descripcion p {
+  margin-bottom: 0.8rem;
+}
+
+.volver {
+  margin-bottom: 2rem;
+}
+
+.volver a {
+  color: #3053d6;
+  text-decoration: none;
+}
+
+.volver a:hover {
+  text-decoration: underline;
+}

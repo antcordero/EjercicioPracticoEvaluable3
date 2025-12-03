@@ -1,8 +1,132 @@
+@import "normalize.css";
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  color: #00B7FF;
+/************ HEADER y NAV *************/
+
+.header {
+  background-image: url(https://images.pexels.com/photos/7708409/pexels-photo-7708409.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 12rem;
+  position: relative;
+  color: #fff;
+}
+
+.header-texto {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header-texto h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.header-texto p {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* BARRA DE TIPOS */
+.tipos-bar {
+  background-color: #3053d6;
+}
+
+.tipos-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.tipos-bar a {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-radius: 3px;
+}
+
+/****** CONTENEDOR GENERAL */
+.contenedor {
+  max-width: 960px;
+  margin: 2rem auto 4rem;
+  text-align: center;
+}
+
+.contenedor h2 {
+  margin-bottom: 2rem;
+}
+
+/******* GRID DE POKEMONS */
+.grid-pokemon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-pokemon {
+  width: 300px;
+  height: 400px;
+  margin: 3rem;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.15);
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.card-pokemon a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-pokemon img {
+  width: 100%;
+  height: 75%;
+  object-fit: contain;
+  background-color: #f7f7f7;
+}
+
+.card-info {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.card-info .numero {
+  display: block;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.card-info h3 {
+  margin: 0.25rem 0 0;
+  font-size: 1rem;
+}
+
+
+
+/*********** FOOTER *************/
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.8rem 0;
+  font-size: 0.8rem;
 }
