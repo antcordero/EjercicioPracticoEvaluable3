@@ -19,7 +19,7 @@
 
 .detalle-imagen img {
   width: 800px;
-  height: 600px;
+  height: 400px;
   object-fit: contain;
   margin: 2rem auto;
   display: block;

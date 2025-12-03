@@ -81,7 +81,7 @@ body {
 
 .card-pokemon {
   width: 300px;
-  height: 400px;
+  height: 300px;
   margin: 3rem;
   border-radius: 4px;
   box-shadow: 0 0 4px rgba(0,0,0,0.15);
